@@ -1,2 +1,1 @@
-# django_ml
-Django | machine learning
+Robotron 4200 is a no profit Django application aims to work on the deployment of a machine learning model, whose training was done on the Toxic Comment Classification Challenge dataset. It was developed as a project to practice web devolopment with python and machine learning tasks.
