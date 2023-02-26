@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+  Resources
+{% endblock %}
+
+{% block conteudo %}
+<html>
+    <head>
+        <title>Toxicity Prediction</title>
+    </head>
+    <body>
+        <h1>Toxicity Prediction</h1>
+        <form method="post" action="">
+            <label>Enter your input here: </label>
+            {% csrf_token %}
+            <input type="text" name="input">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+  Home
+{% endblock %}
+
+{% block conteudo %}
+
+<section id="home"><!-- Início seção home -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex"><!-- Textos da seção -->
+            <div class="align-self-center">
+
+              <h1 class="display-4">Your accounts, simplified</h1>
+              <p>
+                Used by over 1 million people,
+                the Robotron 5000 is an online machine learning tool that will identify toxic texts for you.
+              </p>
+
+              <form class="mt-4 mb-4">
+                <div class="input-group input-group-lg">
+                  <input type="text" placeholder="Your e-mail" class="form-control">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-primary">Sign up</button>
+                  </div>
+                </div>
+              </form>
+
+              <p>Available for
+                <a href="" class="btn btn-outline-light">
+                  <i class="fab fa-android fa-lg"></i>
+                </a>
+                <a href="" class="btn btn-outline-light">
+                  <i class="fab fa-apple"></i>
+                </a>
+              </p>
+
+
+            </div>
+          </div><!--/fim textos da seção -->
+          <div class="col-md-6 d-none d-md-block">
+            <img src="{% static 'img/robot_logo.png' %}">
+          </div>
+        </div>
+      </div>
+    </section><!--/fim seção home -->
+
+    <section class="caixa"><!--/Início seção saiba -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex">
+            <div class="align-self-center">
+              <h2>Know the feeling behind.</h2>
+              <p>
+                Used by over 1 million people,
+                the Robotron 4200  is an online machine learning tool that will identify toxic texts for you.
+              </p>
+              <a href="/about" class="btn btn-primary">About</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="{% static 'img/saiba.png' %}" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção saiba -->
+
+
+    <section class="caixa"><!--/Início seção recursos -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{% static 'img/facil.png' %}" class="img-fluid">
+            <h4>Easy to use</h4>
+            <p>
+              Robotron 5000 goes beyond the basics and allows you to make incredible, essential controls for your finances. As simple as it has to be!            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="{% static 'img/economize.png' %}" class="img-fluid">
+            <h4>Save your time</h4>
+            <p>
+              Time is money! In seconds, you have everything under control and make the most of your time with what really matters to you!            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="{% static 'img/suporte.png' %}" class="img-fluid">
+            <h4>Support</h4>
+            <p>
+              Doubts? Questions? Our awesome support staff helps you out! We're here to solve your problems and make your life much easier!            </p>
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção recursos -->
+{% endblock %}

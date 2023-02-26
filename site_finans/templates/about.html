@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+  Prices
+{% endblock %}
+
+{% block conteudo %}
+    <section class="caixa"><!--/Início seção saiba -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-flex">
+            <div class="align-self-center">
+              <h2>About</h2>
+              <p>
+                Robotron 4200 is a no profit Django application aims to work on the deployment of a machine learning model,
+                whose training was done on the Toxic Comment Classification Challenge dataset. It was developed as a project
+                to practice web devolopment with python and machine learning tasks.
+              </p>
+              <p>To know about the dataset used for the training step, please
+              <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge">hit here!</a>
+
+              </p>
+              <p>Note: The app has educational purposes, we did not focus on the performance of the trained algorithm,
+                so its predictions may not be accurate.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--/FIM seção saiba -->
+
+{% endblock %}

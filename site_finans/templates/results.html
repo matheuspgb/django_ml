@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+  Resources
+{% endblock %}
+
+{% block conteudo %}
+<html>
+    <head>
+        <title>Toxicity Prediction</title>
+    </head>
+    <body>
+        <h1>Toxicity Prediction</h1>
+        <form method="post" action="">
+          <p>The text was classified as: {{ prediction }}</p>
+        </form>
+        <p>Your text: {{ user_input }}</p>
+        <p>Note: Values close to 1 indicate that the comment is toxic.</p>
+    </body>
+</html>
+{% endblock %}
